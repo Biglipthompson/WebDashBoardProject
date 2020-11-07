@@ -4,4 +4,13 @@ border-color: 2px red;
 
 .icon-bell{
     height: 20px;
+    background-color: rgb(170, 105, 170);
+}
+
+body{
+    background-color:  rgb(170, 105, 170);
+}
+
+.dash-icons{
+    height: 30px;
 }
