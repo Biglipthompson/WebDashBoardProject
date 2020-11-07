@@ -1,0 +1,16 @@
+*{
+border-color: 2px red;
+}
+
+.icon-bell{
+    height: 20px;
+}
+
+.bell-container{
+    display: flex;
+    
+}
+
+body{
+    color: black;
+}
