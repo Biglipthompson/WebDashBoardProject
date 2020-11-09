@@ -1,44 +1,63 @@
-*{
-border-color: 2px red;
+/* Start of grid header */
+body, html {
+    height: 100vh;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.icon-bell{
+.grid-container{
+    grid-template-columns: 100px;
+    grid-template rows: auto;
+    grid-template-areas: 
+}
+
+
+/* .grid-header{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    background-color: skyblue;
+} */
+
+/* 
+.app-name{
+    margin-right: auto;
+} */
+
+
+ .icon-bell{
     height: 40px;
     background-color: skyblue;
-}
+}  
+
+
+/* .profile-image{
+    height: 40px;
+    border-radius: 50px;
+    padding-left: 8px;
+    padding-right: 8px;
+}  */
+
+
+
+/* End of grid-header */
+
 
 body{
     background-color:  lightblue;
-}
+     margin: 0; 
+} 
 
 .dash-icons{
     height: 30px;
 }
 
-.grid-header{
-    display: flex;
-    justify-content: space-between;
-    color: black;
-    background-color: skyblue;
-}
-
-.app-name{
-    margin-right: auto;
-}
-
-.profile-image{
-    height: 40px;
-}
-
 .grid-dash{
     display: grid;
-    grid-template-columns: 100px;
     grid-gap: 80px;
-}
+    grid-template-columns: 100px;
+} 
 
-.main-grid{
-    display: grid;
-    grid-template-columns: 200px 200px 200px; 
-    grid-template-rows: 200px 200px;
-    
-}
