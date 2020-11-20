@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* border: solid 1px red; */
 }
 a {
     text-decoration: none;
@@ -14,10 +16,28 @@ body{
 
 .profile-image{
     height: 40px;
-    border-radius: 25%;
+    width: 40px;
+    border-radius: 50%;
+
 }
+
+.personal-info{
+display: flex;
+border-left: 2px solid black;     
+}
+
 .dash-icons{
-    height: 30px;
+    height: 40px;
+}
+
+
+.main-nav{
+    list-style-type: none;
+    background-color: #404c72;;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    align-items: center;
 }
 
 
@@ -33,14 +53,48 @@ body{
 }
 
 .bell-icon{
-    height: 40px;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    animation: scaledown 1s ease-in;
+    animation-fill-mode: forwards;
 }
+
+.bell-icon:hover{
+    animation: scale; 
+    animation-fill-mode: forwards;
+}
+
+ @keyframes scaledown {
+    0%{
+        webkit-transform: scale (1.1);
+        transform: scale (1.1);
+    }
+    100%{
+        webkit-tranfrom: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+@keyframes scale{
+    0%{
+        webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100%{
+        webkit-transform: scale(1.5);
+        transform: scale(1.5); 
+    }
+} 
+
 
 header{
     grid-area: header;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(171, 81, 199);
+    color: white;
+    background-color: #7477bf;
     padding: 10px;
 }
 
@@ -48,16 +102,11 @@ h1{
     margin-right: auto;
 }
 
-nav{
-    grid-area: nav;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(151, 45, 146);
-    align-items: center;
-}
 h3{
     display: flex;
     align-items: center;
+
+    
 }
 main{
     grid-area: main;
@@ -72,16 +121,70 @@ main{
     margin-right: auto;
 }
 
+    input:hover,
+    textarea:hover,
+    select:hover{
+        background-color: rgb(212, 183, 221);
+        transition: ease-in .7s;
+    }
+
+.alert{
+    background-color:  #404c72;;
+}
+
+.traff{
+    margin-right: auto;
+}
+
+.traffic-nav{
+   list-style-type: none;
+}
+
+ul li{
+    padding-right: 5px;
+}
+
+.traffic-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.traffic-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.twitter-svg{
+    height: 50px;
+}
+
+.facebook-svg{
+    height: 50px;
+}
+
+.google-svg{
+    height: 50px;
+}
+
+.social-container{
+    display: flex;
+    float: left;
+    border: solid 2px black;
+    
+}
 
 
 
 
+
+/* Tablet sized media query */
 
 @media (min-width: 768px){
     .grid-container{
         height: 100%;
         display: grid;
-        grid-template-rows: 70px 75px 1fr; 
+        grid-template-rows: 70px 60px 1fr; 
+
         grid-template-areas: 
         "header" 
         "nav" 
@@ -103,6 +206,15 @@ main{
 
 
 
+
+
+
+
+
+
+
+/* Desktop media query */
+
 @media (min-width: 1024px){
 
 header{
@@ -119,6 +231,7 @@ nav{
 }
 
 main {
+    display: grid;
     grid-area: main;
 }
 

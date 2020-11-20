@@ -1,53 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Dashboard App</title>
-    <link rel="stylesheet" href="css/style.css">
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Dashboard App</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 </head>
-
     <body>
         <div class="grid-container">
         <header>
             <h1>Chart App</h1>
-                
-                <img src="icons/icon-bell.svg" class="bell-icon" id="bell-icon" alt="bell-icon"> 
-                
-            <img src="img/me.jpeg" class="profile-image">
-            <h3>Ja'Quan Thompson</h3>      
+            <img src="icons/icon-bell.svg" class="bell-icon" id="bell-icon" alt="bell-icon"> 
+            <div class="personal-info">
+            <img src="img/me.jpeg" alt="This is a picture of me" class="profile-image">
+            <h3>Ja'Quan Thompson</h3>    
+            </div>  
         </header>
 
+<nav>
+    <ul class="main-nav">
+        <li><img src="icons/icon-dashboard.svg" alt="dashboard icon" class="dash-icons"></li>       
+        <li><img src="icons/icon-members.svg" alt="dashboard icon" class="dash-icons"></li>
+        <li><img src="icons/icon-settings.svg" alt="dashboard icon" class="dash-icons"></li>
+        <li><img src="icons/icon-visits.svg" alt="dashboard icon" class="dash-icons"></li>
+    </ul>
+</nav>
 
-        <nav>
-            <a href="#">
-                <img src="icons/icon-dashboard.svg" class="dash-icons">
-            </a> 
-
-            <a href="#">
-                <img src="icons/icon-members.svg" class="dash-icons">
-            </a>
-
-            <a href="#">
-                <img src="icons/icon-settings.svg" class="dash-icons">
-            </a>
-
-            <a href="#">
-            <img src="icons/icon-visits.svg" class="dash-icons">   
-            </a>  
-        </nav>
         <main>
-           <div class="main-header">
+        <div class="main-header">
             <h2 class="headline">Dashboard</h2>
-                <div class="main-search">
-                    <input type="search" placeholder="Search..." clss="input-search">
-                </div>
-          </div>
-    
+            <div class="main-search">
+            <input type="search" placeholder="Search..." class="input-search">
+        </div>
+
+        <!-- Alert div -->
+        </div>
+
+        <div class="alert" id="alert">
+        <p><strong>Alert</strong></p>
+        </div>
+
+
+        <section class="traffic">
+        <div class="traffic-header">
+            <h3 class="traff">Traffic</h3>
+            <ul class="traffic-nav">
+                <li>Hourly</li>
+                <li>Daily</li>
+                <li>Monthly</li>
+                <li>Yearly</li>
+            </ul>
+        </div>
+
+
+        <!-- Line graph -->
+        <div class="widget-container-full">
+        <canvas id="traffic-chart"></canvas>
+        <script>
             
+        </script>
+        </div>
+        </section>
+
+
+        <!-- Bar graph -->
+        <section class="daily">
+        <h3>Daily traffic</h3>
+        <div class="widget-container-half">
+        <canvas id="daily-chart"></canvas>
+        </div>
+        </section>
+
+
+
+
+
+
+        <section class="daily-chart">
+        <h3>Mobile Users</h3>
+        <div>
+        <canvas id="mobile-chart"></canvas>
+        </div>
+        </section>
+
+        <!-- Twitter Social container -->
+        <div class="social-container">
+        <div class="social-image">
+        <img src="icons/icon-twitter.svg" class="twitter-svg" alt="twitter-svg">
+        </div>
+        <div class="social-text">
+        <p>Twitter</p>
+        <p>10,345</p>
+        </div>
+        </div>
+
+        <!-- Facebook container -->
+        <div class="social-container">
+        <div class="social-image">
+        <img src="icons/icon-facebook.svg" class="facebook-svg" alt="facebook-svg">
+        </div>
+        <div class="social-text">
+        <p>Facebook</p>
+        <p>5,000</p>
+        </div>
+        </div>
+
+
+        <!-- Google container -->
+        <div class="social-container">
+        <div class="social-image">
+        <img src="icons/icon-google-plus.svg" class="google-svg" alt="google-svg">
+        </div>
+        <div class="social-text">
+        <p>Google</p>
+        <p>3,678</p>
+        </div>
+        </div>
+
+
+        <!-- New Members Container -->
+        <section class="members">
+        <h3>New Members</h3>
+        <div class="members-container">
+        <img src="img/member-1.jpg" class="profile-pic">
+
+        <div class="members-text">
+        <p>Victoria Chambers</p>
+        <a href="#">victoria.chamers80@example.com</a>
+        </div>
+        <p>10/15/15</p>
+        </div>
+        </section>
+
+
+        <section class="members">
+        <h3>New Members</h3>
+        <div class="members-container">
+        <img src="img/member-2.jpg" class="profile-pic">
+
+        <div class="members-text">
+        <p>Kevin Lewis</p>
+        <a href="#">kevin.lewis80@example.com</a>
+        </div>
+        <p>10/15/15</p>
+        </div>
+        </section>
+
+
+        <section class="members">
+        <h3>New Members</h3>
+        <div class="members-container">
+        <img src="img/member-3.jpg" class="profile-pic">
+
+        <div class="members-text">
+        <p>lauren johnson</p>
+        <a href="#">lauren.johnson80@example.com</a>
+        </div>
+        <p>10/15/15</p>
+        </div>
+        </section>
+
+
+        <section class="members">
+        <h3>New Members</h3>
+        <div class="members-container">
+        <img src="img/member-4.jpg" class="profile-pic">
+
+        <div class="members-text">
+        <p>bart simpson</p>
+        <a href="#">bart.simpson80@example.com</a>
+        </div>
+        <p>10/15/15</p>
+        </div>
+        </section>
+
+        <section class="message"> 
+        <h3>Mesage User</h3>
+
+        <!-- End of new members -->
+
+        <form class="widget-container">
+        <input type="text" placeholder="Search for user" class="form-field" id="userField">
+        <textarea placeholder="Message for user" class="form-area" id="messageField">
+        </textarea>
+        <button class="button-primary" id="send">Send</button>
+        </form>
+        </section>
+
+        <section class="settings">
+        <h3>Settings</h3>
+
+        <!-- Custom CSS code toggle -->
+        <!-- Custom CSS code toggle -->
+        <section class="form-field" id="timezone">
+        <option disabled selected>Select a timezone</option>
+        <option>Eastern</option>
+        <option>Western</option>
+        <option>Central</option>
+        </section>
+        <div class="settings-button">
+        <button class="button-primary" id="save">Save</button>
+        <button class="button-disabled" id="cancel">Cancel</button>
+        </div>
+        </section>
 
         </main>
-    </div>
+        </div>
+        <script src="js/chart.js"></script>
     </body>
 </html>
