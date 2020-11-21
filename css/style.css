@@ -194,7 +194,6 @@ main{
     display: flex;
     float: left;
     border: solid 2px black;
-    
 }
 
 
@@ -257,7 +256,7 @@ main {
 .grid-container{
     height: 100%;
     display: grid;
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 60px 1fr;
     grid-template-areas: 
     "header header" 
