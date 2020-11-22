@@ -50,15 +50,13 @@ border-left: 2px solid black;
 nav ul{
     display: flex;
     flex-direction: row;
-    list-style-type: none;
+     list-style-type: none;
     padding: 0;
     background-color: #4D4F73;
     height: 100%;
+    align-items: center; 
 }
 
-nav ul li{
-    padding: 10px;
-}
 
 .grid-container{
     height: 100%;
