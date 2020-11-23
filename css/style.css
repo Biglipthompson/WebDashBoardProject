@@ -18,6 +18,7 @@ html {
 a {
     text-decoration: none;
 }
+
 .profile-image{
     height: 40px;
     width: 50px;
@@ -53,6 +54,7 @@ nav ul{
     background-color: #4D4F73;
     height: 100%;
 }
+
 nav li{
     padding: 10px;
 }
@@ -67,6 +69,18 @@ nav li{
     "header" 
     "nav" 
     "main";
+}
+
+.daily{
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px grey solid;
+}
+
+.mobile{
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px grey solid;
 }
 
 
@@ -147,6 +161,7 @@ select:hover {
     text-align: center;
 }
 
+
 .traff{
     margin-right: auto;
 }
@@ -173,23 +188,25 @@ select:hover {
     flex-direction: row;
 }
 
-.twitter-svg{
+.social-svg{
+    display: flex;
     height: 50px;
+    border: 5px;
+    width: 100px;
 }
-
-.facebook-svg{
-    height: 50px;
-}
-
-.google-svg{
-    height: 50px;
-}
-
 .social-container{
     display: flex;
+    flex-direction: row;
     float: left;
     border: solid 2px black;
 }
+
+.widget-container-half{
+    display: inline-grid;
+    justify-content: center;
+    text-align: center;
+}
+
 
 
 /* ------------------TABLET SIZE MEDIA QUERY----------- */
@@ -224,14 +241,9 @@ select:hover {
     .widget-container-half{
         display: inline-grid;
         justify-content: center;
-
-        width: 49%;
-
+        text-align: center;
     }
-/* 
-    .daily, .mobile{
-        width: 49%;
-    } */
+
 
     nav ul {
         display: flex;
@@ -239,6 +251,13 @@ select:hover {
         justify-content: center;
         align-items: center;
     }
+
+.daily h3, .mobile h3{
+    display: inline;
+    align-content: center
+    
+    }
+    
 }
 
 
@@ -285,6 +304,15 @@ nav ul{
     flex-direction: column;
     justify-content: flex-start;
     }
+
+    .daily, .mobile{
+        display: inline-grid;
+        justify-content: center;
+        grid-template-columns: 50% 50%;
+        width: 50% 50%;
+
+    }
+
 
 }
 

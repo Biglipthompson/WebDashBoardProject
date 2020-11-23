@@ -47,7 +47,7 @@
 
         <!-- ALERT DIV -->
         <div class="alert" id="alert">
-            <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete! <p class="alert-banner-close">X</p> </p>
+            <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete! <p class="alert-banner-close">X</p> 
             
         </div>
 
@@ -80,7 +80,7 @@
         <!-- Bar graph -->
         <section class="daily">
         <h3>Daily traffic</h3>
-            <div class="widget-container-half" style="position: relative; height:40vh; width:100vw">
+            <div class="widget-container-half" style="position: relative;">
                 <canvas id="daily-chart"></canvas>
             </div>
         </section>
@@ -89,7 +89,7 @@
         <!-- Doughnut chart -->
         <section class="mobile">
         <h3>Mobile Users</h3>
-        <div class="widget-container-half" style="position: relative; height:40vh; width:100vw">
+        <div class="widget-container-half" style="position: relative;">
         <canvas id="mobile-chart"></canvas>
         </div>
         </section>
@@ -102,7 +102,7 @@
         <!-- Twitter Social container -->
         <div class="social-container">
         <div class="social-image">
-        <img src="icons/icon-twitter.svg" class="twitter-svg" alt="twitter-svg">
+        <img src="icons/icon-twitter.svg" class="social-svg" alt="twitter-svg">
         </div>
         <div class="social-text">
         <p>Twitter</p>
@@ -113,7 +113,7 @@
         <!-- Facebook container -->
         <div class="social-container">
         <div class="social-image">
-        <img src="icons/icon-facebook.svg" class="facebook-svg" alt="facebook-svg">
+        <img src="icons/icon-facebook.svg" class="social-svg" alt="facebook-svg">
         </div>
         <div class="social-text">
         <p>Facebook</p>
@@ -125,7 +125,7 @@
         <!-- Google container -->
         <div class="social-container">
         <div class="social-image">
-        <img src="icons/icon-google-plus.svg" class="google-svg" alt="google-svg">
+        <img src="icons/icon-google-plus.svg" class="social-svg" alt="google-svg">
         </div>
         <div class="social-text">
         <p>Google</p>
@@ -134,11 +134,13 @@
         </div>
 
 
-        <!-- New Members Container -->
+        <!------------New Members Container------------->
+
+        <!---------------------------------------------->
         <section class="members">
         <h3>New Members</h3>
         <div class="members-container">
-        <img src="img/member-1.jpg" class="profile-pic">
+        <img src="img/member-1.jpg" class="profile-pic" alt="new members pic">
 
         <div class="members-text">
         <p>Victoria Chambers</p>
@@ -152,7 +154,7 @@
         <section class="members">
         <h3>New Members</h3>
         <div class="members-container">
-        <img src="img/member-2.jpg" class="profile-pic">
+        <img src="img/member-2.jpg" class="profile-pic" alt="new members pic">
 
         <div class="members-text">
         <p>Kevin Lewis</p>
@@ -166,7 +168,7 @@
         <section class="members">
         <h3>New Members</h3>
         <div class="members-container">
-        <img src="img/member-3.jpg" class="profile-pic">
+        <img src="img/member-3.jpg" class="profile-pic" alt="new members pic">
 
         <div class="members-text">
         <p>lauren johnson</p>
@@ -180,7 +182,7 @@
         <section class="members">
         <h3>New Members</h3>
         <div class="members-container">
-        <img src="img/member-4.jpg" class="profile-pic">
+        <img src="img/member-4.jpg" class="profile-pic" alt="new members pic">
 
         <div class="members-text">
         <p>bart simpson</p>
@@ -199,28 +201,29 @@
         <input type="text" placeholder="Search for user" class="form-field" id="userField">
         <textarea placeholder="Message for user" class="form-area" id="messageField">
         </textarea>
-        <button class="button-primary" id="send">Send</button>
-        </form>
+                <button class="button-primary" id="send">Send</button>
+            </form>
         </section>
 
         <section class="settings">
-        <h3>Settings</h3>
+            <h3>Settings</h3>
 
         <!-- Custom CSS code toggle -->
         <!-- Custom CSS code toggle -->
-        <section class="form-field" id="timezone">
-        <option disabled selected>Select a timezone</option>
-        <option>Eastern</option>
-        <option>Western</option>
-        <option>Central</option>
-        </section>
-        <div class="settings-button">
-        <button class="button-primary" id="save">Save</button>
-        <button class="button-disabled" id="cancel">Cancel</button>
-        </div>
+        <select class="form-field" id="timezone">
+          
+            <option disabled selected>Select a timezone</option>
+            <option>Eastern</option>
+            <option>Western</option>
+            <option>Central</option>
+        </select>
+            <div class="settings-button">
+                <button class="button-primary" id="save">Save</button>
+                <button class="button-disabled" id="cancel">Cancel</button>
+            </div>
         </section>
         <!-- END OF MAIN SECTION -->
-        </main>
+            </main>
         </div>
         <script src="js/chart.js"></script>
     </body>
