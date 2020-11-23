@@ -305,11 +305,22 @@ nav ul{
     justify-content: flex-start;
     }
 
-    .daily, .mobile{
+    .daily{
+        grid-template-columns: 50%;
+
+    }
+
+    .mobile{
+        grid-template-columns: 50%;
+\
+    }
+
+    .widget-container-half{
         display: inline-grid;
         justify-content: center;
         grid-template-columns: 50% 50%;
-        width: 50% 50%;
+        width: 50%;
+
 
     }
 
