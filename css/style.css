@@ -280,21 +280,22 @@ main {
     /* margin-bottom: 50px; */
 }
 
-
-
-
-.daily, .members, .message {
-     grid-column: 1 / span 1;
+.social{
+    grid-column: 1 / span 2;
 }
 
-.mobile, .activity, .settings {
+.daily
+.members 
+.message {
+     grid-column: 1 / span 1;
+     margin-bottom: 15px
+}
+
+.mobile
+.activity 
+.settings {
     grid-column: 2 / span 1;
 }
-
-.daily, .mobile{
-    margin-bottom: 15px
-}
-
 
 .social-svg{
     text-align: center;
