@@ -26,6 +26,12 @@ a {
     margin: auto 10px;
 }
 
+.profile-pic{
+    border-radius: 50%;
+}
+
+
+
 .personal-info{
 display: flex;
 border-left: 2px solid black;     
@@ -85,23 +91,21 @@ nav li{
 
  @keyframes scaledown {
     0%{
-        webkit-transform: scale (1.1);
-        transform: scale (1.1);
+        transform: scale (1.1)
     }
     100%{
-        webkit-tranfrom: scale(1.0);
-        transform: scale(1.0);
+        transform: scale(1.0)
     }
 }
 
 @keyframes scale{
     0%{
-        webkit-transform: scale(1);
+
         transform: scale(1);
     }
 
     100%{
-        webkit-transform: scale(1.5);
+
         transform: scale(1.5); 
     }
 } 
@@ -245,6 +249,20 @@ select:hover {
     align-content: center
     
     }
+
+.daily
+.members-container
+.message {
+     grid-column: 1 / span 1;
+     margin-bottom: 15px;
+}
+
+.mobile
+.activity 
+.settings {
+    grid-column: 2 / span 1;
+}
+
     
 }
 
@@ -272,23 +290,30 @@ main {
     display: grid;
     grid-area: main;
     grid-template-columns: 1fr;
-
 }
 
-.traffic, .social{
+.traffic{
     grid-column: 1 / span 2;
-    /* margin-bottom: 50px; */
+    margin-bottom: 15px;
 }
+
 
 .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     grid-column: 1 / span 2;
+    border: solid 2px gray;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
+
 .daily
-.members 
+.members-container
 .message {
      grid-column: 1 / span 1;
-     margin-bottom: 15px
+     margin-bottom: 15px;
 }
 
 .mobile
