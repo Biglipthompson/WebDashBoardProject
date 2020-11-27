@@ -47,6 +47,33 @@ border-left: 2px solid black;
 }
 
 
+.bell-icon:hover{
+    animation: scale; 
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes scaledown {
+    0%{
+        transform: scale (1.1)
+    }
+    100%{
+        transform: scale(1.0)
+    }
+}
+
+@keyframes scale{
+    0%{
+
+        transform: scale(1);
+    }
+
+    100%{
+
+        transform: scale(1.5); 
+    }
+} 
+
 .dash-icons{
     height: 40px;
 }
@@ -83,32 +110,6 @@ nav li{
     border: 1px grey solid;
 }
 
-
-.bell-icon:hover{
-    animation: scale; 
-    animation-fill-mode: forwards;
-}
-
- @keyframes scaledown {
-    0%{
-        transform: scale (1.1)
-    }
-    100%{
-        transform: scale(1.0)
-    }
-}
-
-@keyframes scale{
-    0%{
-
-        transform: scale(1);
-    }
-
-    100%{
-
-        transform: scale(1.5); 
-    }
-} 
 
 
 header{
@@ -186,12 +187,6 @@ select:hover {
     flex-direction: row;
 }
 
-.social-svg{
-    display: flex;
-    height: 50px;
-    border: 5px;
-    width: 100px;
-}
 
 .widget-container-half{
     display: inline-grid;
@@ -304,13 +299,37 @@ main {
     justify-content: space-between;
     grid-column: 1 / span 2;
     border: solid 2px gray;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
+.social-svg{
+    display: flex;
+    /* background-color: #7477bf; */
+    height: 100px;
+    width: 100px;
+    text-align: center;
+
+}
+
+
+.activity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.members{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .daily
-.members-container
+.members
 .message {
      grid-column: 1 / span 1;
      margin-bottom: 15px;
@@ -320,11 +339,15 @@ main {
 .activity 
 .settings {
     grid-column: 2 / span 1;
+    margin-bottom: 15px;
 }
 
-.social-svg{
-    text-align: center;
-}
+/* .settings{
+    display: flex;
+    justify-content: column;
+    align-items: center;
+
+} */
 
 .grid-container{
     height: 100%;
