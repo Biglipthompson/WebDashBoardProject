@@ -67,7 +67,7 @@
         </div>
 
         <!-- Line graph -->
-            <div class="widget-container-full" style="position: relative; height:40vh; width:93vw">
+            <div class="widget-container-full" style="position: relative; height:40vh; width:96vw">
                 <canvas id="traffic-chart"></canvas>
             </div>
         </section>
@@ -78,8 +78,8 @@
 
         <!-- Bar graph -->
         <section class="daily">
-        <h3>Daily traffic</h3>
-            <div class="widget-container-half" style="position: relative; width: 45vw;">
+        <h3 class="daily-h3">Daily traffic</h3>
+            <div class="widget-container-half" style="position: relative; width: 47vw;">
                 <canvas id="daily-chart"></canvas>
             </div>
         </section>
@@ -88,7 +88,7 @@
         <!-- Doughnut chart -->
         <section class="mobile">
         <h3>Mobile Users</h3>
-            <div class="widget-container-half" style="position: relative; width: 45vw;">
+            <div class="widget-container-half" style="position: relative; width: 47vw;">
                 <canvas id="mobile-chart"></canvas>
         </div>
         </section>
@@ -100,7 +100,7 @@
 
         <!-- Twitter Social container -->
      
-        <!-- <h3>Social Stats</h3>   -->
+        <!-- <h3>Social Stats</h3>-->
 <section class="social">
     <div class="social-image">
         <img src="icons/icon-twitter.svg" class="social-svg" alt="twitter-svg">
@@ -147,10 +147,10 @@
 
         <!---------------------------------------------->
 
-
 <section class="members">
-    <h3>New Members</h3>
+
     <div class="members-container">
+        <h3 class="members-h3">New Members</h3>
         <img src="img/member-1.jpg" class="profile-pic" alt="new members pic">
     <div class="members-text">
         <p>Victoria Chambers</p>
@@ -162,8 +162,9 @@
 
 
 <!-- <section class="members"> -->
-    <h3>New Members</h3>
+
     <div class="members-container">
+        <h3 class="members-h3">New Members</h3>
     <img src="img/member-2.jpg" class="profile-pic" alt="new members pic">
     <div class="members-text">
     <p>Kevin Lewis</p>
@@ -175,8 +176,9 @@
 
 
 <!-- <section class="members"> -->
-    <h3>New Members</h3>
+
     <div class="members-container">
+        <h3 class="members-h3">New Members</h3>
     <img src="img/member-3.jpg" class="profile-pic" alt="new members pic">
     <div class="members-text">
     <p>lauren johnson</p>
@@ -188,8 +190,9 @@
 
 
 <!-- <section class="members"> -->
-    <h3>New Members</h3>
+
     <div class="members-container">
+        <h3 class="members-h3">New Members</h3>
     <img src="img/member-4.jpg" class="profile-pic" alt="new members pic">
     <div class="members-text">
     <p>bart simpson</p>
@@ -215,8 +218,9 @@
         <!--------------------------------------------->
 
 <section class="activity">
-    <h3>Recent Activity</h3>
-    <div class="activity">
+
+    <div class="activity-img">
+        <h3 class="activity-h3">Recent Activity</h3>
     <img src="img/member-1.jpg" class="profile-pic" alt="new members pic">
     <div class="members-text">
     <p>Victoria Chambers commented on your post</p>
@@ -228,8 +232,9 @@
 
 <!-- 
 <section class="activity"> -->
-    <h3>Recent activity</h3>
-    <div class="activity">
+ 
+    <div class="activity-img">
+        <h3 class="activity-h3">Recent activity</h3>
     <img src="img/member-2.jpg" class="profile-pic" alt="new members pic">
     <div class="members-text">
     <p>Kevin Lewis commented on your post</p>
@@ -241,8 +246,9 @@
 
 
  <!-- <section class="activity"> -->
-     <h3>Recent activity</h3>
-    <div class="activity">
+
+    <div class="activity-img">
+        <h3 class="activity-h3">Recent activity</h3>
     <img src="img/member-3.jpg" class="profile-pic" alt="new members pic">
     <div class="members-text">
     <p>lauren johnson commented on your post</p>
@@ -254,8 +260,9 @@
 
 
 <!-- <section class="activity"> -->
-    <h3>Recent activity</h3>
-    <div class="activity">
+
+    <div class="activity-img">
+        <h3 class="activity-h3">Recent activity</h3>
     <img src="img/member-4.jpg" class="profile-pic" alt="new members pic">
     <div class="members-text">
     <p>bart simpson commented on your post</p>
@@ -266,13 +273,15 @@
 
 </section>
 
-
+<!-- SEND A MESSAGE SECTION -->
 <section class="message"> 
-    <h3>Mesage User</h3>
+    <h3 class="message=-h3">Mesage User</h3>
     <form class="widget-container">
+
     <input type="text" placeholder="Search for user" class="form-field" id="userField">
-    <textarea placeholder="Message for user" class="form-area" id="messageField">
-    </textarea>
+    <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
+
+    <!-- SEND BUTTON -->
     <button class="button-primary" id="send">Send</button>
     </form>
 </section>
@@ -280,17 +289,17 @@
 
 
 <section class="settings">
-<h3>Settings</h3>
-<!-- Custom CSS code toggle -->
+<h3 class="settings-h3">Settings</h3>
 
+<!-- CUSTOM CSS CODE FOR TOGGLE-->
 <label class="switch-light switch-candy" onclick="">
     <input type="checkbox">
     <strong>
-      Send Email Notifications
+      <p class="first-toggle-p">Send Email Notifications</p>
     </strong>
     <span>
-      <span>Off</span>
-      <span>On</span>
+      <span>OFF</span>
+      <span>ON</span>
       <a></a>
     </span>
   </label>
@@ -298,26 +307,28 @@
   <label class="switch-light switch-candy" onclick="">
     <input type="checkbox">
     <strong>
-      Set Profile To Public
+    <p class="second-toggle-p">Set Profile To Public</p>
     </strong>
     <span>
-      <span>Off</span>
-      <span>On</span>
+      <span>OFF</span>
+      <span>ON</span>
       <a></a>
     </span>
   </label>
 
-<!-- Custom CSS code toggle -->
-<select class="form-field" id="timezone">
+<!-- CUSTOM CSS CODE FOR TOGGLE -->
+<select class="form-options" id="timezone">
 <option disabled selected>Select a timezone</option>
+
 <option>Eastern</option>
 <option>Western</option>
 <option>Central</option>
 </select>
 
+<!-- SETTINGS BUTTON -->
 <div class="settings-button">
-<button class="button-primary" id="save">Save</button>
-<button class="button-disabled" id="cancel">Cancel</button>
+<button class="save-btn" id="save">Save</button>
+<button class="can-btn" id="cancel">Cancel</button>
 </div>
 </section>
 
