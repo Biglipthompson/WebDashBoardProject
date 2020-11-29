@@ -254,6 +254,7 @@ select:hover {
 .social-image{
     border: solid 2px gray;
     width: 33%;
+    margin: 1%;
     background-color: #7477bf;
 }
 
@@ -261,6 +262,7 @@ select:hover {
     float: right;
     display: flex;
     align-items: center;
+    font-size: 20px;
 }
 
 
@@ -322,12 +324,14 @@ select:hover {
 
 .form-area{
     border: solid black 2px;
-    margin-bottom: 5px;
+    padding-bottom: 73px;
+    margin-bottom: 10px;
 }
 
 .form-options{
     border: solid black 2px;
     margin-top: 8px;
+    width: 95%;
     margin-bottom: 5px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -422,6 +426,7 @@ header{
 nav{
     display: grid;
     grid-area: nav;
+    grid-template-columns: 86px;
 }
 
 .main-header{
