@@ -248,6 +248,19 @@ select:hover {
 .social-svg{
     width: 80px;
     height: 80px;
+    background-color: #7477bf;
+}
+
+.social-image{
+    border: solid 2px gray;
+    width: 33%;
+    background-color: #7477bf;
+}
+
+.social-text{
+    float: right;
+    display: flex;
+    align-items: center;
 }
 
 
