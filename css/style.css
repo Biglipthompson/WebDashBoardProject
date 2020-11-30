@@ -244,17 +244,20 @@ select:hover {
 .social-svg{
     width: 80px;
     height: 80px;
-    /* background-color: #7477bf; */
+    background-color: #7477bf;
 }
 
 .social-image{
     border: solid 2px gray;
     width: 33%;
     margin: 1%;
-    /* background-color: #7477bf; */
+    background-color: #7477bf;
+    border-radius: 5%;
 }
 
 .social-text{
+    display: flex;
+    flex-direction: column;
     float: right;
     display: flex;
     align-items: center;
@@ -264,11 +267,11 @@ select:hover {
 .twitter,
 .facebook,
 .google{
-    color:  #7477bf;
+    color:  white;
 }
 
 .numbers{
-    
+    font-size: 40px;
 }
 
 
@@ -419,6 +422,7 @@ select:hover {
         width: 95vw;
     }
 
+
 .daily
 .members
 .message {
@@ -429,10 +433,21 @@ select:hover {
 
 
 .mobile
-.activity 
+.activity
 .settings {
     grid-column: 2 / span 1;
-    }
+}
+
+.members{
+    display: flex;
+    align-items: center;
+}
+
+.activity{
+    display: flex;
+    align-items: center;
+}
+    
 }
 
 
