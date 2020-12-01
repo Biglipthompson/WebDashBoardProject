@@ -382,13 +382,13 @@ select:hover {
 @media (min-width: 768px){
 
     .grid-container{
-        height: 100%;
-        display: grid;
-        grid-template-rows: 70px 75px 1fr; 
-        grid-template-areas: 
-        "header" 
-        "nav" 
-        "main";
+    height: 100%;
+    display: grid;
+    grid-template-rows: 75px 1fr;
+    grid-template-columns: 75px 1fr;
+    grid-template-areas:
+      "header header"
+      "nav main";
     }
 
     header{
@@ -406,22 +406,22 @@ select:hover {
 
     nav ul {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
-    }
+        }
 
-
+.social{
+    flex-direction: row;
+}
 
 .daily h3, .mobile h3{
     align-content: center
     
     }
-
     .widget-container-full{
         width: 95vw;
     }
-
 
 .daily
 .members
@@ -429,8 +429,6 @@ select:hover {
      grid-column: 1 / span 1;
      margin-bottom: 15px;
 }
-
-
 
 .mobile
 .activity
@@ -446,8 +444,7 @@ select:hover {
 .activity{
     display: flex;
     align-items: center;
-}
-    
+    }
 }
 
 
@@ -513,11 +510,14 @@ main {
 
 
 .activity{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
-    border: solid 2px gray;
+    align-items: center; */
+    border: solid 2px gray; 
 }
+
+
+
 
 .activity-h3{
     margin-top: 25px;
@@ -538,6 +538,23 @@ main {
     border: solid 2px gray;
 }
 
+/* .date {
+    float: right;
+} */
+
+/* .profile-pic{
+    float: left;
+} */
+/* .activity-img{
+    float: left;
+} */
+/* 
+.members-text{
+    float: right;
+}
+.members-text1{
+    float: right;
+} */
 
 .daily
 .members
