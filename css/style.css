@@ -257,10 +257,20 @@ select:hover {
 }
 .button-primary{
     color: white;
-    background-color: green;
+    background-color:  #7477bf;
     height: 30px;
     margin-bottom: 10px;
     text-align: center;
+    margin-top: 15px;
+}
+.save-btn, .can-btn{
+    color: white;
+    background-color: #7477bf;;
+    width: 49%;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 15px;
 }
 .switch-light, .switch-candy{
     margin-bottom: 8px;
@@ -285,16 +295,11 @@ select:hover {
 .form-options{
     border: solid black 2px;
     margin-top: 8px;
-    width: 95%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding-top: 8px;
     padding-bottom: 8px;
 }
-.save-btn, .can-btn{
-    padding-top: 3px;
-    margin-bottom: 5px;
-    margin-top: 15px;
-}
+
 
 /* ------------------TABLET SIZE MEDIA QUERY----------- */
 
@@ -328,6 +333,32 @@ nav ul {
 .social{
     flex-direction: row;
     }
+
+    .form-options{
+        width: 100%;
+    }
+ 
+    .button-primary{
+        color: white;
+        background-color:  #7477bf;
+        height: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .save-btn, .can-btn{
+        color: white;
+        background-color: #7477bf;;
+        width: 49%;
+        height: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .settings-button{
+        margin-top: 37px;
+    }
 }
 
 
@@ -348,6 +379,11 @@ nav{
     grid-area: nav;
     grid-template-columns: 86px;
 }
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    }
 .main-header{
    grid-column: 1 / span 2;
 }
@@ -420,31 +456,18 @@ main {
 .mem-img{
     margin-right: auto;
 }
-
 .mem-text{
     margin: auto;
 }
-
 .act{
     margin: auto;
 }
-
 .act-text{
     margin: auto;
 }
-
  .date{
    margin: auto;
  } 
-
-
-
- 
-
-
-
-
-
 
 
 .daily
@@ -466,7 +489,6 @@ main {
     margin-bottom: 10px;
 }
 
-
 .grid-container{
     height: 100%;
     display: grid;
@@ -476,12 +498,53 @@ main {
     "header header" 
     "nav main" 
 }
-nav ul{
+
+.settings{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    }
+    border: solid 2px gray;
 }
+
+.switch-light, .switch-candy{
+    margin: auto;
+    }
+
+    /* .button-primady{
+        margin-top: 100px;
+    } */
+
+    .switch-light, .switch-candy{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        width: 50%;
+    }
+
+    .save-btn, .can-btn{
+    width: 48%;
+    color: white;
+    background-color:#7477bf;
+    }
+
+    .first-toggle-p{
+        float: left;
+        margin-right: 20px;
+    }
+
+    .second-toggle-p{
+        float: left;
+        margin-right: 20px;
+    }
+
+    .toggleDivOne{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    .toggleDivTwo{
+        display: flex;
+        flex-direction: row;
+    }
 
 
 
