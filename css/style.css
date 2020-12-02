@@ -355,7 +355,7 @@ nav ul {
     }
     .save-btn, .can-btn{
         color: white;
-        background-color: #7477bf;;
+        background-color: #7477bf;
         width: 49%;
         height: 30px;
         margin-bottom: 10px;
@@ -391,7 +391,6 @@ main {
     "header header" 
     "nav main" 
 }
-
 nav ul{
     display: flex;
     flex-direction: column;
@@ -468,20 +467,28 @@ h1{
     margin-right: auto;
 }
 .mem-img{
-    margin-right: auto;
+    /* margin-right: auto; */
 }
 .mem-text{
     margin: auto;
-}
+    text-align: left;
+} 
 .act{
-    margin: auto;
+    /* margin: auto; */
 }
 .act-text{
+    text-align: left;
     margin: auto;
 }
  .date{
-   margin: auto;
+    margin: auto;
  } 
+
+ .arrow{
+    margin: auto;
+    color: #7477bf;
+    
+ }
 
 .daily
 .members
@@ -543,7 +550,9 @@ margin-bottom: 10px;
 .toggleDivTwo{
 display: flex;
 flex-direction: row;
+    }
 }
+
 
 
 
